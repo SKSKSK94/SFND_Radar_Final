@@ -1,7 +1,7 @@
 # SFND_Radar_Final
 
 ## Final Project : Radar Target Generation and Detection
-
+***
 ### FP.1 FMCW Waveform Design
 Using the given system requirements, design a FMCW waveform. Find its Bandwidth (B), chirp time (Tchirp) and slope of the chirp.
 For given system requirements the calculated slope should be around 2e13
@@ -50,7 +50,7 @@ For given system requirements the calculated slope should be around 2e13
     % Similar vectors for range_covered and time delay.
     r_t = zeros(1,length(t));
     td = zeros(1,length(t));
-    
+***    
 ### FP.2 Simulation Loop
 Simulate Target movement and calculate the beat or mixed signal for every timestamp. A beat signal should be generated such that once range FFT implemented, it gives the correct range i.e the initial position of target assigned with an error margin of +/- 10 meters.
 
@@ -77,7 +77,7 @@ Simulate Target movement and calculate the beat or mixed signal for every timest
         Mix(i) = Tx(i)*Rx(i);
 
     end
-    
+***    
 ### FP.3 Range FFT (1st FFT)
 Implement the Range FFT on the Beat or Mixed Signal and plot the result. A correct implementation should generate a peak at the correct range, i.e the initial position of target assigned with an error margin of +/- 10 meters.
 
@@ -110,7 +110,7 @@ Implement the Range FFT on the Beat or Mixed Signal and plot the result. A corre
      % plot FFT output 
     plot(P1(:,1)); 
     axis ([0 200 0 0.5]);
-
+***
 ### (Reference) 2nd FFT
     %% RANGE DOPPLER RESPONSE
     % The 2D FFT implementation is already provided here. This will run a 2DFFT
@@ -139,7 +139,7 @@ Implement the Range FFT on the Beat or Mixed Signal and plot the result. A corre
     doppler_axis = linspace(-100,100,Nd);
     range_axis = linspace(-200,200,Nr/2)*((Nr/2)/400);
     figure,surf(doppler_axis,range_axis,RDM);
-
+***
 ### FP.4 2D CFAR
 Implement the 2D CFAR process on the output of 2D FFT operation, i.e the Range Doppler Map. The 2D CFAR processing should be able to suppress the noise and separate the target signal. The output should match the image shared in walkthrough.
 
