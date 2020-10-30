@@ -5,6 +5,8 @@
 ### FP.1 FMCW Waveform Design
 Using the given system requirements, design a FMCW waveform. Find its Bandwidth (B), chirp time (Tchirp) and slope of the chirp.
 For given system requirements the calculated slope should be around 2e13
+<img src="images/Image1.png" width="1000" height="800" />
+
 
     %% Radar Specifications 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -144,6 +146,8 @@ Implement the Range FFT on the Beat or Mixed Signal and plot the result. A corre
 Implement the 2D CFAR process on the output of 2D FFT operation, i.e the Range Doppler Map. The 2D CFAR processing should be able to suppress the noise and separate the target signal. The output should match the image shared in walkthrough.
 
 #### Implementation steps for the 2D CFAR process.
+
+<img src="images/Image4.png" width="800" height="500" />
 
 1. Determine the number of Training cells for each dimension Tr and Td. Similarly, pick the number
 of guard cells Gr and Gd.
