@@ -83,6 +83,8 @@ Simulate Target movement and calculate the beat or mixed signal for every timest
 ### FP.3 Range FFT (1st FFT)
 Implement the Range FFT on the Beat or Mixed Signal and plot the result. A correct implementation should generate a peak at the correct range, i.e the initial position of target assigned with an error margin of +/- 10 meters.
 
+<img src="images/Result1.png" width="600" height="400" />
+
     %% RANGE MEASUREMENT
 
      % *%TODO* :
@@ -144,6 +146,8 @@ Implement the Range FFT on the Beat or Mixed Signal and plot the result. A corre
 ***
 ### FP.4 2D CFAR
 Implement the 2D CFAR process on the output of 2D FFT operation, i.e the Range Doppler Map. The 2D CFAR processing should be able to suppress the noise and separate the target signal. The output should match the image shared in walkthrough.
+
+<img src="images/Result2.png" width="1400" height="500" />
 
 #### Implementation steps for the 2D CFAR process.
 
